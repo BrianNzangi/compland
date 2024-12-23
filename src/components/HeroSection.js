@@ -13,11 +13,11 @@ function HeroSection() {
         <div className="space-y-2">
           {/* Row 1 */}
           <div
-            className="flex gap-4 w-[918px] h-[324px] bg-cover bg-center rounded-sm"
+            className="flex gap-4 w-[950px] h-[324px] bg-cover bg-center rounded-sm"
             style={{ backgroundImage: `url(${banner1})` }}
           ></div>
           {/* Row 2 */}
-          <div className="flex gap-2 w-[918px]"> {/* Ensured this width matches Row 1 */}
+          <div className="flex gap-2 w-[950px]"> {/* Ensured this width matches Row 1 */}
             {/* First Half of Row 2 */}
             <div
               className="flex-1 h-[155px] bg-cover bg-center rounded-sm"
