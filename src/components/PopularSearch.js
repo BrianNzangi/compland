@@ -22,7 +22,7 @@ function PopularSearch() {
     "Vention Wireless Charger",
   ];
 
-  // Function to calculate width based on keyword length
+  // eslint-disable-next-line no-unused-vars
   const calculateWidth = (keyword) => {
     const length = keyword.length;
     const minWidth = 100; // Minimum width for short keywords

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { PiPackageFill } from "react-icons/pi"; // Order Tracking Icon
 import { IoCall } from "react-icons/io5"; // Phone Icon
 import Logo from '../assets/images/Logo.png'; // Logo Image

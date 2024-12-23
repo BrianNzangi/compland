@@ -1,5 +1,4 @@
-import React, { useRef } from 'react';
-import styles from './CategoriesSection.module.css'; // Import the CSS module
+import React from 'react';
 import gaming from '../assets/images/gaming.webp'; // Gaming image import
 import mobile from '../assets/images/mobile.webp'; // Gaming image import
 import watch from '../assets/images/watch.webp'; // Gaming image import
@@ -24,7 +23,7 @@ const categories = [
   function CategoriesSection() {
     return (
       <section className="bg-white py-6">
-        <div className="max-w-[1500px] mx-auto">
+        <div className="max-w-[1460px] mx-auto">
           <h2 className="text-2xl font-outfit font-medium mb-4">Shop by Categories</h2>
           
           {/* Categories Grid Container */}
