@@ -7,17 +7,17 @@ import banner1 from '../assets/images/banner1.webp';
 
 function HeroSection() {
   return (
-    <section className="max-w-[1500px] mx-auto p-4">
+    <section className="max-w-screen-xl mx-auto pt-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {/* Column 1 */}
         <div className="space-y-2">
           {/* Row 1 */}
           <div
-            className="flex gap-4 w-[1138px] h-[324px] bg-cover bg-center rounded-sm"
+            className="flex gap-4 w-[918px] h-[324px] bg-cover bg-center rounded-sm"
             style={{ backgroundImage: `url(${banner1})` }}
           ></div>
           {/* Row 2 */}
-          <div className="flex gap-2 w-[1138px]"> {/* Ensured this width matches Row 1 */}
+          <div className="flex gap-2 w-[918px]"> {/* Ensured this width matches Row 1 */}
             {/* First Half of Row 2 */}
             <div
               className="flex-1 h-[155px] bg-cover bg-center rounded-sm"

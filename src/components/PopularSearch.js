@@ -42,8 +42,8 @@ function PopularSearch() {
   };
 
   return (
-    <section className="bg-white py-8">
-      <div className="max-w-[1500px] mx-auto px-4">
+    <section className="bg-white py-4">
+      <div className="max-w-screen-xl mx-auto">
         <h2 className="text-2xl font-outfit font-semibold mb-4">Popular Searches</h2>
         <div className="grid grid-cols-auto-fill gap-4">
           {keywords.map((keyword, index) => (

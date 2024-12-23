@@ -23,7 +23,7 @@ const categories = [
   function CategoriesSection() {
     return (
       <section className="bg-white py-6">
-        <div className="max-w-[1460px] mx-auto">
+        <div className="max-w-screen-xl mx-auto">
           <h2 className="text-2xl font-outfit font-medium mb-4">Shop by Categories</h2>
           
           {/* Categories Grid Container */}

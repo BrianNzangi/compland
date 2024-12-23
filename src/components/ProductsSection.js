@@ -9,7 +9,7 @@ import dell from '../assets//images/dell.webp';
 function ProductsSection() {
   return (
     <section className="bg-white py-8">
-      <div className="p-4 max-w-[1500px] mx-auto">
+      <div className="p-0 max-w-screen-xl mx-auto">
         {/* Section Header */}
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-outfit font-semibold">
@@ -21,7 +21,7 @@ function ProductsSection() {
         </div>
 
         {/* Product Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-6 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           {/* Product Cards with local images */}
           <Link to="/product/1">
             <ProductCard
@@ -54,16 +54,6 @@ function ProductsSection() {
           </Link>
 
           <Link to="/product/4">
-            <ProductCard
-              hasDiscount={true}
-              originalPrice="25,999"
-              discountedPrice="22,999"
-              productName="Refurbished Dell Latitude 7490 Intel Core i5-8350U 14 Laptop - Black"
-              imageSrc={dell}
-            />
-          </Link>
-
-          <Link to="/product/5">
             <ProductCard
               hasDiscount={true}
               originalPrice="25,999"

@@ -4,8 +4,8 @@ import banner1 from '../assets/images/banner1.webp'; // Logo Image
 
 function BannerSection() {
   return (
-    <section className="bg-white py-8">
-      <div className="max-w-[1500px] mx-auto px-4">
+    <section className="bg-white py-4">
+      <div className="max-w-screen-xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Banner 1 */}
           <div className="relative bg-[#f4f4f4] rounded overflow-hidden h-[150px]">

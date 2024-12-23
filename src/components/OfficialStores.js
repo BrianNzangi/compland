@@ -22,8 +22,8 @@ const OfficialStores = () => {
   ];
 
   return (
-    <section className="bg-white py-8">
-      <div className="max-w-[1500px] mx-auto px-2">
+    <section className="bg-white py-4">
+      <div className="max-w-screen-xl mx-auto">
         {/* Section Header */}
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-outfit font-semibold">Official Stores</h2>
@@ -33,11 +33,11 @@ const OfficialStores = () => {
         </div>
 
         {/* Brands Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-2">
           {brands.map((brand, index) => (
             <div
               key={index}
-              className="border border-gray-200 rounded flex items-center justify-center h-[121px] w-[161px] bg-white"
+              className="border border-gray-200 rounded flex items-center justify-center h-[121px] w-[151px] bg-white"
             >
               <img
                 src={brand.logo}

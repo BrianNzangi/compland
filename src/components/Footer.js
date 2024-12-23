@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-[#1F2323] text-white pt-0 pb-8">
       {/* Compland USP Section */}
       <section className="bg-[#F2F2F2] py-8">
-        <div className="max-w-screen-xl mx-auto px-4">
+        <div className="max-w-screen-xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 font-outfit">
             {/* Column 1 */}
             <div className="flex flex-col items-center text-center">
@@ -45,7 +45,7 @@ const Footer = () => {
       </section>
 
       {/* Footer Links Section */}
-      <div className="max-w-screen-xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-8 font-outfit py-16">
+      <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-8 font-outfit py-16">
         {/* Column 1 - About */}
         <div>
           <h2 className="font-medium text-base">ABOUT</h2>
@@ -97,7 +97,7 @@ const Footer = () => {
 
       {/* Last Row with Social Media and Copyright */}
       <div className="border-t border-gray-600 py-4">
-        <div className="max-w-screen-xl mx-auto px-4 flex justify-between items-center">
+        <div className="max-w-screen-xl mx-auto flex justify-between items-center">
           <div className="text-sm text-gray-400">&copy; 2024 Compland Company. All rights reserved.</div>
           <div className="flex space-x-4">
             <Link to="https://facebook.com" className="text-gray-400 hover:text-[#0071DC]"><FaFacebookF size={20} /></Link>

@@ -12,8 +12,8 @@ function Header() {
   return (
     <header className="bg-[#0071DC] text-white">
       {/* First Row */}
-      <div className="mx-auto max-w-[1500px]">
-        <div className="container mx-auto max-w-[1500px] flex justify-between items-center py-3">
+      <div className="max-w-screen-xl mx-auto">
+        <div className="container mx-auto max-w-screen-xl flex justify-between items-center py-3">
           {/* Left Col */}
           <div className="flex space-x-6 font-outfit font-normal text-sm">
             <a href="/returns" className=".">Returns</a>
@@ -37,11 +37,11 @@ function Header() {
         </div>
       </div>
       {/* Stroke */}
-      <div className="mx-auto w-[1500px] border-b opacity-50" style={{ borderColor: "#d2e4fb" }}></div>
+      <div className="mx-auto w-[1280px] border-b opacity-50" style={{ borderColor: "#d2e4fb" }}></div>
       
       {/* Second Row */}
       <div className="w-full">
-       <div className="container mx-auto max-w-[1500px] flex items-center justify-between py-4">
+       <div className="container mx-auto max-w-screen-xl flex items-center justify-between py-4">
         {/* Column 1: Logo */}
         <div className="flex items-center">
          <a href="/" className="flex items-center">
@@ -98,7 +98,7 @@ function Header() {
 
 {/* Third Row: Categories, Deals, Brands */}
 <div className="w-full border-t border-opacity-50 border-[#d2e4fb]">
-        <div className="container mx-auto max-w-[1500px] py-4 flex justify-between font-outfit text-base font-medium">          
+        <div className="container mx-auto max-w-screen-xl py-4 flex justify-between font-outfit text-base font-medium">          
           {/* Categories - Left Column */}
           <div className="flex space-x-6">
             <a href="/categories" className="hover:.">TV & Audio</a>

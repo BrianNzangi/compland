@@ -9,7 +9,7 @@ function DailyDeals() {
   return (
     <section className="flex justify-center bg-[#ffffff]">
       {/* Container limited to 1280px */}
-      <div className="max-w-[1500px] w-full rounded-md bg-[#0071DC] py-6 px-4 flex flex-col md:flex-row">
+      <div className="max-w-screen-xl w-full rounded-md bg-[#0071DC] py-6 px-4 flex flex-col md:flex-row">
           {/* Right Column: Heading, Subheading, Button */}
            <div className="flex-1 flex-col justify-start max-w-[300px] font-outfit text-white py-20 gap-6 mt-4">
              <h2 className="text-3xl font-bold leading-tight">Daily Deals</h2>

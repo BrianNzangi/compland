@@ -47,8 +47,8 @@ const BlogSection = () => {
   ];
 
   return (
-    <section className="bg-white py-8">
-      <div className="max-w-[1500px] mx-auto px-4">
+    <section className="bg-white py-4">
+      <div className="max-w-screen-xl mx-auto">
         {/* Section Title */}
         <h2 className="text-2xl font-outfit font-bold mb-6">Tech Blog that helps the planet</h2>        
 
