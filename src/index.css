@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Typewriter Animation */
+@keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .input-with-placeholder {
+    overflow: hidden; /* Ensure the text is clipped while typing */
+    white-space: nowrap; /* Prevent wrapping */
+    border-right: 2px solid #0071DC; /* Add the cursor effect */
+    animation: typewriter 4s steps(40) 1s 1 normal both; /* Set the animation */
+  }
+  
+  /* Add a smooth blinking cursor effect */
+  input::placeholder {
+    animation: blink 0.75s step-end infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  @layer utilities {
+    .categories-scroll-container::-webkit-scrollbar {
+      height: 8px;
+    }
+  
+    .categories-scroll-container::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+  
+    .categories-scroll-container::-webkit-scrollbar-thumb {
+      background: #0071dc;
+      border-radius: 4px;
+    }
+  
+    .categories-scroll-container::-webkit-scrollbar-thumb:hover {
+      background: #005bb5;
+    }
+  }
+
+  @media (min-width: 100px) {
+    .grid-cols-auto-fill {
+      grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+    }
+  }
+
+  .banner {
+    height: 200px; /* Adjust height as needed */
+  }
+  
+  
+  

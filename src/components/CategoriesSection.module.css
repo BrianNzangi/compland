@@ -1,0 +1,24 @@
+/* CategoriesSection.module.css */
+.categoriesScrollContainer {
+    display: flex;
+    gap: 1.5rem; /* Spacing between items */
+    overflow-x: auto; /* Enables horizontal scroll */
+    scroll-snap-type: x mandatory; /* Optional: For snap scrolling */
+    max-width: 100%; /* Ensures the scroll container doesn't overflow */
+    padding-bottom: 1rem; /* Optional: Adds space below the container */
+  }
+  
+  .categoriesScrollContainer::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .categoriesScrollContainer {
+      gap: 1rem; /* Reduce space between items on smaller screens */
+    }
+  }
+
+  .categoriesScrollContainer {
+    scroll-behavior: smooth;
+    display: flex;
+  }
