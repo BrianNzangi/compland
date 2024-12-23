@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BsArrowRight } from "react-icons/bs";
 import { BsBox2 } from "react-icons/bs";
 import { PiShoppingCart } from "react-icons/pi";
 import { GoPeople } from "react-icons/go";
@@ -8,11 +7,11 @@ import { LiaWalletSolid } from "react-icons/lia";
 
 const CartPage = () => {
   return (
-    <section className="bg-gray-50 py-8">
-      <div className="max-w-screen-xl mx-auto px-4">
+    <section className="bg-gray-50 pt-8 pb-24">
+      <div className="max-w-screen-xl mx-auto px-0 font-outfit">
         {/* Breadcrumb */}
         <div className="flex items-center text-sm text-gray-600 mb-6">
-          <Link to="/cart" className="text-[#0071DC] hover:underline">
+          <Link to="/cart" className="text-[#0071DC] font-medium hover:underline">
             1. Cart
           </Link>
           <span className="mx-2">{">"}</span>
