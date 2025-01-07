@@ -99,10 +99,10 @@ function Header() {
 
 {/* Third Row: Categories, Deals, Brands */}
 <div className="bg-[#ffeeeb] w-full border-t border-opacity-50 border-[#d2e4fb]">
-        <div className="container mx-auto max-w-screen-xl py-4 flex justify-between font-outfit text-base font-medium">          
+        <div className="container mx-auto max-w-screen-xl py-2 flex justify-between font-outfit text-base font-medium">          
           {/* Categories - Left Column */}
           <div className="text-[#213038] flex space-x-6">
-            <a href="/categories" className="hover:underline">TV & Audio</a>
+            <a href="/tv-audio" className="hover:underline">TV & Audio</a>
             <a href="/electronics" className="hover:underline">Computing</a>
             <a href="/fashion" className="hover:underline">Appliances</a>
             <a href="/home-appliances" className="hover:underline">Phones</a>
