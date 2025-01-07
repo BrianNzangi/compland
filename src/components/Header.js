@@ -17,8 +17,8 @@ function Header() {
           {/* Left Col */}
           <div className="flex space-x-6 font-outfit font-normal text-sm">
             <a href="/returns" className=".">Returns</a>
-            <a href="/about-us" className=".">Tech Talk</a>
-            <a href="/help-support" className=".">Help & Support</a>
+            <a href="/about-us" className=".">Help & Support</a>
+            <a href="/help-support" className=".">Tech Talk</a>
             <a href="/help-support" className=".">Business</a>
           </div>
 
@@ -27,7 +27,7 @@ function Header() {
             {/* Order Tracking */}
             <a href="/order-tracking" className="flex items-center space-x-2">
               <PiPackageFill size={16} />
-              <span>Tracking Your Order </span>
+              <span>Track Your Order </span>
             </a>
             {/* Contact */}
             <a href="tel:+254 712-345678" className="flex items-center space-x-2">
@@ -98,22 +98,23 @@ function Header() {
 </div>
 
 {/* Third Row: Categories, Deals, Brands */}
-<div className="bg-[#ff8277] w-full border-t border-opacity-50 border-[#d2e4fb]">
+<div className="bg-[#ffeeeb] w-full border-t border-opacity-50 border-[#d2e4fb]">
         <div className="container mx-auto max-w-screen-xl py-4 flex justify-between font-outfit text-base font-medium">          
           {/* Categories - Left Column */}
-          <div className="flex space-x-6">
-            <a href="/categories" className="hover:.">TV & Audio</a>
-            <a href="/electronics" className="hover:.">Computing</a>
+          <div className="text-[#213038] flex space-x-6">
+            <a href="/categories" className="hover:underline">TV & Audio</a>
+            <a href="/electronics" className="hover:underline">Computing</a>
             <a href="/fashion" className="hover:underline">Appliances</a>
-            <a href="/home-appliances" className="hover:.">Phones</a>
-            <a href="/home-appliances" className="hover:.">Smart Tech</a>
-            <a href="/home-appliances" className="hover:.">Phones</a>
+            <a href="/home-appliances" className="hover:underline">Phones</a>
+            <a href="/home-appliances" className="hover:underline">Smart Tech</a>
+            <a href="/home-appliances" className="hover:underline">Phones</a>
           </div>
           
           {/* Deals & Brands - Right Column */}
           <div className="flex space-x-6 just">
-            <a href="/deals" className="hover:.">Brands</a>
-             <a  href="/deals"  className="bg-[#FACC15] text-[#000000] border border-[#FACC15] py-0 px-4 rounded-full hover:bg-transparent hover:text-[#FACC15] hover:border-[#FACC15] transition-colors duration-300">
+            <a href="/deals" className="text-[#ff3838] hover:underline">Business</a>
+            <a href="/deals" className="text-[#213038] hover:underline">Brands</a>
+            <a  href="/deals"  className="bg-[#FACC15] text-[#000000] border border-[#FACC15] py-0 px-4 rounded-full hover:bg-transparent hover:text-[#FACC15] hover:border-[#FACC15] transition-colors duration-300">
               Deals
             </a>
           </div>
