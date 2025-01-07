@@ -25,7 +25,7 @@ function ProductsSection() {
         </div>
 
         {/* Product Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:grid-row-1">
+        <div className="grid grid-cols-1 md:grid-cols-5">
           {/* Dynamically render Product Cards */}
           {products.map(product => (
             <Link key={product.id} to={`/product/${product.id}`}>

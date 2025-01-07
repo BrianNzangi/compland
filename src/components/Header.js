@@ -10,15 +10,16 @@ import { FaCartShopping } from "react-icons/fa6"; // Cart Icon
 
 function Header() {
   return (
-    <header className="bg-[#0071DC] text-white">
+    <header className="bg-[#ff3838] text-white">
       {/* First Row */}
       <div className="max-w-screen-xl mx-auto">
-        <div className="container mx-auto max-w-screen-xl flex justify-between items-center py-3">
+        <div className="container mx-auto max-w-screen-xl flex justify-between items-center py-2">
           {/* Left Col */}
           <div className="flex space-x-6 font-outfit font-normal text-sm">
             <a href="/returns" className=".">Returns</a>
-            <a href="/about-us" className=".">About Us</a>
+            <a href="/about-us" className=".">Tech Talk</a>
             <a href="/help-support" className=".">Help & Support</a>
+            <a href="/help-support" className=".">Business</a>
           </div>
 
           {/* Right Col */}
@@ -97,7 +98,7 @@ function Header() {
 </div>
 
 {/* Third Row: Categories, Deals, Brands */}
-<div className="w-full border-t border-opacity-50 border-[#d2e4fb]">
+<div className="bg-[#ff8277] w-full border-t border-opacity-50 border-[#d2e4fb]">
         <div className="container mx-auto max-w-screen-xl py-4 flex justify-between font-outfit text-base font-medium">          
           {/* Categories - Left Column */}
           <div className="flex space-x-6">
