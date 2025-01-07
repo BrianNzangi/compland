@@ -1,14 +1,21 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+// Product.js or wherever you're displaying products
+import React, { useState, useEffect } from 'react';
+import ProductGrid from '../components/ProductGrid'; // Adjust the path if necessary
 
 function Product() {
-  const { id } = useParams();
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch('https://fakestoreapi.com/products')
+      .then(response => response.json())
+      .then(data => setProducts(data))
+      .catch(error => console.error('Error fetching products:', error));
+  }, []);
 
   return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold mb-4">Product Details</h1>
-      <p>You're viewing the product with ID: {id}</p>
-      <p className="mt-4">More product details will go here...</p>
+    <div>
+      <h1>Shop</h1>
+      <ProductGrid products={products} showAll={true} />
     </div>
   );
 }

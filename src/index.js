@@ -1,11 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom/client"; // Updated import for React 18
+import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
+import App from "./App"; // Import the App component
 
-const root = ReactDOM.createRoot(document.getElementById("root")); // Use createRoot
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <App /> {/* No need to wrap it with CartProvider here */}
   </React.StrictMode>
 );

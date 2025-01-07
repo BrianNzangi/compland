@@ -1,4 +1,5 @@
 import React from "react";
+import { useCart } from "../contexts/CartContext"; // Import your custom CartContext
 import { Link } from "react-router-dom";
 import { BsBox2 } from "react-icons/bs";
 import { PiShoppingCart } from "react-icons/pi";
@@ -6,6 +7,8 @@ import { GoPeople } from "react-icons/go";
 import { LiaWalletSolid } from "react-icons/lia";
 
 const CartPage = () => {
+  const { cartItems, totalAmount } = useCart(); // Access cartItems and totalAmount from the context
+
   return (
     <section className="bg-gray-50 pt-8 pb-24">
       <div className="max-w-screen-xl mx-auto px-0 font-outfit">
@@ -27,20 +30,29 @@ const CartPage = () => {
             {/* Cart Product */}
             <div className="border p-4 bg-white shadow-sm rounded-lg mb-6">
               <h2 className="text-lg font-bold mb-4">Your Cart</h2>
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center">
-                  <img
-                    src="/path/to/product-image.jpg"
-                    alt="Product"
-                    className="w-16 h-16 object-cover rounded"
-                  />
-                  <div className="ml-4">
-                    <h3 className="font-medium text-gray-800">Product Name</h3>
-                    <p className="text-sm text-gray-600">Qty: 1</p>
+              {cartItems.length === 0 ? (
+                <p className="text-gray-600">Your cart is empty.</p>
+              ) : (
+                cartItems.map((item) => (
+                  <div
+                    key={item.id}
+                    className="flex items-center justify-between mb-4"
+                  >
+                    <div className="flex items-center">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="w-16 h-16 object-cover rounded"
+                      />
+                      <div className="ml-4">
+                        <h3 className="font-medium text-gray-800">{item.name}</h3>
+                        <p className="text-sm text-gray-600">Qty: {item.quantity}</p>
+                      </div>
+                    </div>
+                    <p className="text-gray-800 font-bold">KSh. {item.price}</p>
                   </div>
-                </div>
-                <p className="text-gray-800 font-bold">KSh. 19,999</p>
-              </div>
+                ))
+              )}
             </div>
 
             {/* Frequently Bought With */}
@@ -75,7 +87,7 @@ const CartPage = () => {
               <p className="text-gray-600 text-sm mb-2">
                 Tax calculated at checkout
               </p>
-              <p className="text-xl font-bold mb-4">KSh. 59,999</p>
+              <p className="text-xl font-bold mb-4">KSh. {totalAmount}</p>
               <button className="w-full bg-[#0071DC] text-white py-2 rounded hover:bg-[#005bb5]">
                 Checkout
               </button>
